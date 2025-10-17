@@ -21,9 +21,10 @@ The combination of open-access & open-source remote sensing data & machine learn
 presents a transformative opportunity in the energy access, energy modelling domain. With their use, we aim to “democratize” high granularity (building level)
 and good accuracy Solar Rooftop Potential information at scale, and in geographies that need it the most, at a significantly lower cost. 
 
-.. image:: /_static/Methodology.png
+.. image:: /source/_static/Methodology.png
 
-**Our approach:**
+**Our approach**
+
 * Estimating the solar potential of rooftops in granular manner is a costly and time-consuming process. It requires high-granularity data, such as Digital Surface Models (DSMs), to accurately map urban morphology and accurately estimate the yield of incoming solar radiation. This data-intensive approach is typically limited to selected geographies (e.g., capital cities, wealthy neighbourhoods) leaving other areas unmapped.
 * To address this, this project aims to train a U-Net convolutional neural network. This network is used to develop a normalized Digital Surface Models (nDSM) from open-source Sentinel-2 satellite imagery, resampling – in the process – the data from 10 meters to 50-centimeter spatial resolution.
 * The resulting nDSM is then used in GRASS GIS, a powerful open-source geospatial processing engine. Using its advanced modelling and time series analysis capabilities, the annual solar potential is then extracted for all rooftops in any area of interest, enabling access to this information across all geographies Sentinel-2 data is available at.
